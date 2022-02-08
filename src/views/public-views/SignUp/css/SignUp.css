@@ -1,0 +1,34 @@
+#SignUpView {
+    position: relative;
+    height: 100vh;
+}
+
+#SignUpView #TitanIntro {
+    background-color: #0089ec;
+    height: 50vh;
+    color: white;
+    position: relative;
+}
+
+#SignUpView #TitanIntro #IntroText {
+    max-width: 380px;
+}
+
+#SignUpView #AvidSubscriber {
+    background-color: white;
+    height: 50vh;
+}
+
+#SignUpView .Logo {
+    position: absolute;
+    top: 31px;
+    left: 5vw;
+    font-size: 45px;
+    z-index: 3;
+    color: white;
+}
+@media screen and (max-width:1550px) {
+    .IntroImage{
+        display:none;
+    }
+}

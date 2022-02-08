@@ -1,0 +1,104 @@
+#detail-boards {
+    min-height: 80vh;
+    background: linear-gradient(90deg, #E54934 52.08%, #E54934 77.6%, #E54934 99.99%);
+    border-radius: 4px;
+}
+
+#detail-boards #user-info-box {
+    flex-flow: row wrap;
+    padding-left: 0px;
+}
+
+#detail-boards .black-text-box {
+    background-color: black;
+    padding: 9px 12px 9px 12px;
+    border-radius: 4px;
+}
+
+#detail-boards .user-rank {
+    width: 70px;
+}
+
+#detail-boards .user-name {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#detail-boards #followers-user {
+    padding-left: 0px;
+    display:flex;
+    flex-flow: row wrap;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    max-width: 870px;
+}
+#detail-boards .comment-box {
+    background: #E54934;
+    font-size: 18px;
+    border-radius: 4px;
+    width: fit-content;
+    height:fit-content;
+    padding: 5px;
+}
+#detail-boards .user-rank-box{
+    column-gap:20px;
+}
+#detail-boards #user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+@media screen and (max-width:860px) {
+    #detail-boards #followers-user{
+        max-width: 600px;
+    }
+    #detail-boards #followers-user li{
+        width: 100%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:460px) {
+    #detail-boards #followers-user li{
+        flex-direction: column !important;
+    }
+    #detail-boards #followers-user li div{
+        width: 100%;
+    }
+    #detail-boards #followers-user li p{
+        width: 100%;
+    }
+    #detail-boards #followers-user li .post-row{
+        margin-top: 10px;
+    }
+    #detail-boards #followers-user li .user-avatar{
+        display:flex;
+        align-items: center !important;
+        justify-content:center;
+    }
+    #detail-boards .post-row{
+        padding:0px !important;
+    }
+}
+
+@media screen and (max-width:530px) {
+    #detail-boards #user-info-box .user-score{
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    #detail-boards #user-info-box{
+        max-width:290px;
+    }
+}
+@media screen and (max-width:325px) {
+    #detail-boards #user-info-box .user-rank-box{
+        flex-direction: column !important;
+        row-gap: 10px;
+        text-align: center;
+    }
+}

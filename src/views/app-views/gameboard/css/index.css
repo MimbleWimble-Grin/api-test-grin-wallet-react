@@ -1,0 +1,11 @@
+#game-board-view .memo-view{
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 500px;
+    font-weight: 600;
+}
+
+#game-board-view #search-result{
+    height:440px;
+    border-radius: 5px;
+}

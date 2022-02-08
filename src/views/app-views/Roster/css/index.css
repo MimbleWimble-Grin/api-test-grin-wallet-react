@@ -1,0 +1,121 @@
+#roster-view{
+    padding-bottom: 50px;
+}
+
+#roster-view #message-box{
+    background-color: white;
+    padding: 20px;
+}
+#roster-view .alert-button{
+    max-width:120px;
+    padding: 5px;
+}
+#roster-view .accept-button{
+    background-color: #1A8917;
+    border: 1px solid #1A8917;
+}
+#roster-view .decline-button{
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+}
+#roster-view .button-row{
+    column-gap: 10px;
+}
+#roster-view .message-box{
+    row-gap: 10px;
+}
+#roster-view #plan-box{
+    margin-top: 90px !important;
+    max-width: 1200px;
+    margin: auto;
+}
+#roster-view #monthly-plan{
+    background-color:#E54934;
+}
+#roster-view #weekly-plan{
+    background: linear-gradient(90deg, #0F0C29 0%, #302B63 50%, #24243E 100%);
+}
+#roster-view #daily-plan{
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+}
+#roster-view .plan-card{
+    color: white;
+    padding: 20px;
+    row-gap: 25px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+#roster-view #monthly-plan button{
+    max-width: 120px;
+}
+#roster-view .roster-history{
+    margin-top: 30px;
+    padding: 50px 20px 50px 20px;
+    min-height: 350px;
+    border-radius: 4px;
+}
+#roster-view .timer{
+    color: white;
+    display:flex;
+    justify-content:center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    width:180px;
+}
+#roster-view .ShadowBtn{
+    width: 120px !important;
+}
+#roster-view a{
+    text-decoration: none;
+}
+#roster-view .roster-info{
+    padding-right: 20px;
+    row-gap: 10px;
+}
+#roster-view .roster-history-like{
+    row-gap: 10px;
+}
+#roster-view .roster-history-content{
+    column-gap:10px;
+}
+
+
+@media screen and (max-width:850px) {
+    #roster-view #plan-box{
+        flex-direction: column !important;
+        row-gap: 20px;
+    }
+    #roster-view .plan-card{
+        max-width: 100% !important;
+    }
+    #roster-view .roster-history{
+        flex-direction: column !important;
+    }
+    #roster-view .roster-info{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    #roster-view .message-box .black-text-box{
+        flex-direction: column!important;
+        text-align: center;
+    }
+    #roster-view .message-box .button-row{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #roster-view .message-box .black-text-box{
+        flex-direction: column!important;
+        text-align: center;
+    }
+    #roster-view .message-box .button-row{
+        flex-direction: column !important;
+        row-gap: 10px;
+    }
+    #roster-view .roster-history-content{
+        flex-direction: column !important;
+    }
+}

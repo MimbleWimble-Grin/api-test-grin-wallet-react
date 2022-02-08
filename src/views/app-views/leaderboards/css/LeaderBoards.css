@@ -1,0 +1,77 @@
+#leader-boards {
+    background: linear-gradient(90deg, #E54934 52.08%, #E54934 77.6%, #E54934 99.99%);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 80vh;
+}
+#leader-boards ul li{
+    display:flex;
+    width: 100%;
+    gap: 15px;
+}
+#leader-boards ul li a{
+    color: white;
+    display:flex;
+    gap: 15px;
+}
+#leader-boards ul li .score-link{
+    width: 100%;
+}
+#leader-boards ul{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin: 0px;
+    padding: 0px 32px 0px 32px;
+    gap: 15px;
+}
+
+#leader-boards ul li .rank-row{
+    column-gap: 20px;
+}
+#leader-boards ul li .user-rank-row{
+    column-gap: 20px;
+}
+#leader-boards .user-rank{
+    width: 70px;
+}
+#leader-boards .user-name{
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#leader-boards #timer{
+    background: linear-gradient(90deg, #00750C 99.98%, #F3F9F3 99.99%, #CEE6D0 100%);
+    border-radius: 4px;
+    color: white;
+    padding: 11px;
+}
+
+
+@media screen and (max-width:560px) {
+    #leader-boards ul li .rank-row{
+        display:flex;
+        flex-direction: column !important;
+    }
+    #leader-boards ul li .user-rank-row{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #leader-boards ul li .username-box{
+        width: 100%;
+        
+    }  
+}
+
+@media screen and (max-width:390px) {
+
+    #leader-boards ul li .user-rank-row{
+        width: 100%;
+        flex-direction: column !important;
+    }  
+    #leader-boards ul li .username-box{
+        margin-top: 10px;
+    }  
+}

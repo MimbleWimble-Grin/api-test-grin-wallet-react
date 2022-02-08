@@ -1,0 +1,120 @@
+#ProfileView{
+    background: linear-gradient(90deg,#FF75C3,#FFA647,#FFE83F,#9FFF5B,#70E2FF,#CD93FF);
+    width: 100%;
+    border-radius: 4px;
+    min-height: 80vh;
+}
+#ProfileView .incus {
+    background: linear-gradient(90deg, #152331 0%, #000000 100%);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 6px;
+    outline: none;
+}
+#ProfileView #user-avatar{
+    cursor:pointer;
+}
+#ProfileView input:focus {
+    border: 0px;
+}
+
+#ProfileView input:disabled {
+    opacity: 1 !important;
+}
+
+#ProfileView .GoldBadge {
+    background: linear-gradient(90deg, #FFBB0D 0%, #EEEB82 57.63%, #E8AA0A 100%);
+    border-radius: 4px;
+}
+
+#ProfileView .SilverBadge {
+    background: linear-gradient(90deg, #C7D4D8 0%, #C7D4D8 57.63%, #92B0BA 100%);
+    border-radius: 4px;
+}
+
+#ProfileView .CopperBadge {
+    background: linear-gradient(90deg, #DCA16A 0%, #DCA16A 57.63%, #EFB47E 100%);
+    border-radius: 4px;
+}
+
+#ProfileView .ParticBadge {
+    background: linear-gradient(90deg, #3216DC 0%, #3616D7 57.63%, #3316DA 67.19%, #3216DA 79.69%, #3216DA 100%);
+    border-radius: 4px;
+}
+#ProfileView .BadgeRow{
+    gap: 15px;
+    flex-flow: row wrap;
+}
+#ProfileView .ScoreBoard{
+    color: black;
+    font-weight: 600;
+}
+#ProfileView .DepositBoard{
+    min-height: 250px;
+    border-radius: 30px;
+}
+#ProfileView .THBoard{
+    border-radius: 30px;
+}
+#ProfileView #slate-pack{
+    width: 320px;
+}
+#ProfileView #user-form{
+    width: 320px;
+}
+
+@media screen and (max-width:930px) {
+    #ProfileView .BadgeRow{
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:850px) {
+    #ProfileView{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    #ProfileView #user-tool-box{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content:center !important;
+        width:100%;
+    }
+    #ProfileView #user-info-box{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content:center !important;
+        width:100%;
+    }
+    #ProfileView #user-form{
+        width: 100% !important;
+    }
+    #ProfileView .BadgeRow{
+        justify-content: center;
+        max-width: 100%;
+    }
+    #badge-box{
+        margin-left: 0px !important;
+        margin-top: 30px;
+        width: 100%;
+    }
+    #ProfileView #slate-pack{
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+    #ProfileView #transaction-list{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #button-row{
+        flex-direction: row !important;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #button-row{
+        flex-direction: column !important;
+    }
+}

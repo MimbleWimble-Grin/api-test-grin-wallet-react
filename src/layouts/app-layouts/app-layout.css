@@ -1,0 +1,76 @@
+#AppLayout{
+    max-width: 1440px;
+    margin: auto;
+}
+#AppLayout ul li{
+    font-size: 25px;
+    cursor: pointer;
+}
+#logout-btn{
+    font-size: 25px;
+    cursor:pointer;
+}
+#AppLayout ul li{
+    color: white;
+}
+#AppLayout ul a{
+    text-decoration: none;
+}
+#AppLayout ul{
+    list-style: none;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+#AppLayout header{
+    background: linear-gradient(90deg, #000000 99.98%, #002E5D 99.99%, #002E5D 100%);
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+#AppLayout .GoldText{
+    background: linear-gradient(#F7971E,#FFD200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#AppLayout .HeaderLogo{
+    font-size: 50px;
+    background: linear-gradient(90deg,#FF75C3,#FFA647,#FFE83F,#9FFF5B,#70E2FF,#CD93FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#AppLayout header{
+    margin: 25px 0px 30px 0px;
+}
+#AppLayout main{
+   width: 100%;
+}
+#AppLayout .mobile{
+    display:none;
+}
+#AppLayout .menu-show{
+    display:flex !important;
+}
+
+@media screen and (max-width:1010px) {
+    #header-list{
+        display:none !important;
+        position: absolute;
+        top: 90px;
+        left:0px;
+        right: 0px;
+        background-color: black;
+        height:auto;
+        padding-left: 0px !important;
+    }
+    .mobile{
+        display:block !important;
+    }
+    .menu-show{
+        flex-direction: column;
+    }
+    #logout-btn{
+        display:none;
+    }
+}
